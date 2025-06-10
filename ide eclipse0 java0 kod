@@ -1,0 +1,33 @@
+//java kod 2. dereceden bir denklemin köklerini hesaplama
+    
+    import java.util.Scanner;
+
+
+  public class ...... {
+ 
+	public static void main (String [] args) {
+    
+    Scanner scn=new Scanner(System.in);
+		System.out.print("Kat sayı A giriniz :  ");
+		double a=scn.nextDouble();
+		System.out.print("Kat sayı B  giriniz :  ");
+		double b=scn.nextDouble();
+		System.out.print("Kat sayı C giriniz :  ");
+		double c=scn.nextDouble();
+		
+		double D=(b*b)-4*a*c;
+		if (D>0) 
+		{
+		double x1 =(-b+Math.sqrt(D))/2*a;	
+		double x2 =(-b+Math.sqrt(D))/2*a;	
+		System.out.println("Kök 1  (x1) =  "+x1);
+		System.out.println("Kök 2  (x2) =  "+x2);
+		}else if (D==0) {
+			double x1 =(-b+Math.sqrt(D))/2*a;
+			System.out.println("Kök 1  (x1) =  "+x1);
+		}else if (D<0) {
+			System.out.println("Reel kökler yoktur");
+			
+		  }
+    	 }
+   }
